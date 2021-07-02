@@ -1,0 +1,72 @@
+/*Our Story page Styling*/
+.contentStory {
+  margin-top: 480px; /* spacing from the top for the content */
+}
+
+.story {
+  font-family: "Times New Roman", serif, sans-serif; /* font family for the story content */
+  text-align: center; /* text to align center for story content*/
+  margin-left: 20%; /* story content to move margin left 20% */
+  margin-right: 20%; /* story content to move margin right 20% */
+  letter-spacing: 1px; /* spacing inbetween the letters of 1px */
+  line-height: 30px; /* height of the line to 30px */
+}
+
+.grid2 {
+  display: grid; /* display grid */
+  width: 80%; /* width of grid2 to 80% */
+  grid-template-columns: 1fr 2fr; /* grid format for columns of 1 fraction and 2 fraction*/
+  grid-gap: 20px; /* 20px of gap between the grid */
+  margin-left: 10%; /* margin to the left by 10% */
+}
+
+.product1, .product3 {
+  text-align: right; /* text to align right for product 1 & 3*/
+}
+
+.product2, .product4 {
+  font-family: "Times New Roman", serif, sans-serif; /* font family for the story product 2 & 4 */
+  text-align: left; /* text to align left for product 2 & 4*/
+  letter-spacing: 1px; /* spacing inbetween the letters of 1px */
+  line-height: 30px; /* height of the line to 30px */
+}
+
+.position {
+  font-weight: bold; /* font made to bold for the status of the people */
+}
+
+.storyimg {
+  width: 100%; /* width of story image to 100% */
+  height: 400px; /* height of story image to 400px */
+}
+
+@media (max-width: 1023px) {
+  .storyimg {
+    width: 100%; /* width of story image to 100% */
+    height: 160px; /* height of story image to 160px */
+  }
+
+  .contentStory {
+    margin-top: 240px; /* spacing from the top for the content */
+  }
+
+  .grid2 {
+    display: grid; /* display grid */
+    width: 80%; /* width of grid2 to 80% */
+    grid-template-columns: 1fr; /* grid format for columns of 1 fraction only*/
+    grid-gap: 20px; /* 20px of gap between the grid */
+  }
+
+  .product1, .product2, .product3, .product4 {
+    text-align: center; /*ALignment for product1, product2, product3 and product4 to center*/
+  }
+
+  .story {
+    font-family: "Times New Roman", serif, sans-serif; /* font family for the story content */
+    text-align: center; /* text alignment for story content to center */
+    margin-left: 10%; /* margin to the left of 10% */
+    margin-right: 10%; /* margin to the right of 10% */
+    letter-spacing: 1px; /* spacing inbetween each letter of 1px */
+    line-height: 30px; /* height of line is 30px */
+  }
+}

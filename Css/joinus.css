@@ -1,0 +1,113 @@
+/*Join Us page Styling*/
+td {
+  font-size: 1.2em; /* font size for td is 1.2em */
+  font-family: "Times New Roman", serif, sans-serif; /* font of td*/
+}
+
+.contentJoinus {
+  margin-top: 480px; /* spacing for content is 480px */
+}
+
+.joinusimg {
+  width: 100%; /* width image for joinus is is 100% */
+  height: 400px; /* height image for joinus is 400px */
+}
+
+.contentJoinus .wrapper {
+  background-color: rgba(212, 175, 55, 1); /* background color for class wrapper is rgba(212, 175, 55, 1)*/
+  color: black; /* text color is black */
+  margin-left: 30%; /* margin left of 30% */
+  margin-right: 30%; /* margin right of 30%*/
+  letter-spacing: 2px; /* spacing inbetween each letter is 2px */
+  border-radius: 40px; /* border radius in wrapper is 40px */
+  padding: 5px; /* padding for wrapper is 5px from top, left, right and bottom */
+}
+
+.contentJoinus .wrapper .register {
+  background-color: #4CAF50; /* background color for class register is #4CAF50 */
+  border: 1px solid #4CAF50; /* border is 1px solid and color #4CAF50 for class register */
+  border-radius: 10px; /* border radus for class register is 10px */
+  width: 70%; /*width for class register is 70% */
+  padding: 5px; /*padding for class register is 5px from all directions*/
+  color: black; /* font color for class register is black */
+  font-size: 1.2em; /* font size for class register is 1.2em */
+  letter-spacing: 4px; /* spacing inbetween each letter is 4px */
+}
+
+.contentJoinus .wrapper .register:hover {
+  background-color: #45a049; /* background color for class register when hover is #45a049 */
+  border: 1px solid #45a049; /* border for class register when hover is 1px solid with color of #45a049 */
+  border-radius: 10px; /* border radius of 10px */
+  width: 70%; /* width of 70% for class register when hover */
+  padding: 5px; /* padding of 5px for class register when hover */
+  color: white; /* font color for class register hover is white */
+  font-size: 1.2em; /* font size for class register when hover is 1.2em */
+  letter-spacing: 4px; /* spacing inbetween each letter is 4px */
+}
+
+input[type=text], select, input[type=date], input[list="race"], input[list="language"], input[type=tel], input[type=number], input[type=email] {
+  width: 100%; /* wdith is 100% */
+  padding: 10px 15px; /* padding is 10px on top and 15px on the right */
+  margin: 8px 0; /* margin is 8px on top and 0px for the rest */
+  display: inline-block; /* display is inline-block to make ir all horizontal */
+  border: 1px solid #ccc; /* border is 1px, solid and a color of #ccc */
+  border-radius: 4px; /* border radius is 4px */
+  box-sizing: border-box; /* box sizing is border-box */
+  font-size: 12px; /* font size is 12px */
+  cursor: text; /* cursor is text*/
+}
+
+input[type="text"]:focus:valid {
+   border: 3px solid green; /* when text is valid, border becomes 3px solid with a color green */
+}
+
+input:focus:invalid, select:focus:invalid {
+   border: 3px solid red; /* when text is invalid, border becomes 3px solid with a color red */
+ }
+
+ input[type="radio"], label, input[type="checkbox"] {
+ 	margin: 5px; /* margin is 5px all around on checkbox and radio*/
+  cursor:pointer; /* cursor is pointer on checkbox and radio*/
+ }
+
+input[type="checkbox"]:hover:checked, label:hover, input:checked + label {
+  color: rgba(0, 255, 255, 1); /* when checkbox or label is hovered or checked, color becomes rgba(0, 225, 255, 1)*/
+}
+
+.description {
+  cursor: context-menu; /* class description cursor is context-menu */
+}
+@media (max-width: 1276px) {
+  .format {
+    white-space: pre-line; /* "line break" on class format when width is 1276px */
+  }
+
+  .format1 {
+    padding-left: 3.2vh; /* padding left of 3.2vh on class format1 */
+  }
+}
+@media (max-width: 1023px) {
+  .contentJoinus {
+    margin-top: 280px; /* spacing for content is 280px */
+  }
+
+  .contentJoinus .wrapper {
+    background-color: rgba(212, 175,55, 1); /* background color for wrapper is rgba(212, 175, 55, 1) */
+    color: black; /* text color of wrapper is black*/
+    margin-left: 0; /* margin left is 0 */
+    margin-right: 0; /* margin right is 0 */
+    letter-spacing: 2px; /* spacing inbetween each letter is 2px */
+    border-radius: 40px; /* border radius for class wrapper is 40px */
+    padding: 5px; /* padding is 5px for class wrapper */
+  }
+
+  .joinusimg {
+    width: 100%; /* width image for join us is 100% */
+    height: 200px; /* height image for join us is 200px */
+  }
+}
+
+td {
+  font-family: "Times New Roman", serif, sans-serif; /* font of td */
+  font-size: 1em; /* font size is 1em for td */
+}

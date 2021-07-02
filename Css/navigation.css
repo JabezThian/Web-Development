@@ -1,0 +1,121 @@
+header {
+  position: fixed; /* position of bar is fixed */
+  top: 0; /* position of header */
+  left: 0; /* position of header */
+  padding: 0 100px; /* padding of header */
+  background: black; /* background color for bar */
+  width: 100%; /*full width for the nav bar */
+  box-sizing: border-box; /* box sizing to border box */
+}
+
+/*Navigation Bar Positioning on Scroll*/
+.sticky {
+  position: sticky; /* Makes navigation bar follow when scrolling */
+  z-index: 5; /* To be at the very front of all elements in the webpage */
+}
+
+/*Logo Setting before Web Responsive*/
+header .logo {
+  color: #fff; /* logo text color */
+  height: 70px; /* height of logo */
+  line-height: 70px; /* line height of logo*/
+  font-size: 24px; /* font size of logo */
+  float: left; /* Postion of logo to the left */
+  font-weight: bold; /* font of logo to be bold */
+  position: absolute; /* Position of logo to absolute */
+}
+
+.logo {
+    max-width: 265px; /*logo of a max width of 265px */
+    max-height: 100%; /* logo of a max height of 100% */
+    width: 90%; /* width of logo to be 90% */
+    height: 100%; /* height of the logo to be 100% */
+    left: 30px; /* position of the logo to be left with a 30px spacing from the left */
+}
+
+/*Navigation Bar Menu Style*/
+header nav {
+  float: right; /* link to be position of the right */
+}
+
+header nav ul {
+  margin: 0; /* Margin to 0 */
+  padding: 0; /* Padding to 0 */
+  display: flex; /* display to flex */
+}
+
+header nav ul li {
+  list-style: none; /* remove list style */
+  font-size: 18px; /* font size of link*/
+}
+
+header nav li a {
+  height: 70px; /* height of link to 70px */
+  line-height: 70px; /* line height of link to 70px */
+  padding: 0 30px; /* padding of link */
+  color: #fff; /*words color*/
+  text-decoration: none; /* Remove the underline */
+  display: block; /* Display to block */
+}
+
+/*Navigation Hover effect*/
+header nav ul li a.active{
+  color: #fff; /* color of class active*/
+  background: rgba(255, 215, 0, 1); /*active background color*/
+}
+header nav ul li a:hover {
+  color: #fff; /* when hover, text color changes */
+  background: rgba(212, 175,55, 1); /*when hover, backgroundcolor*/
+}
+
+/*hamburger Menu Icon*/
+.menu-toggle {
+  color: #fff; /*hamburger menu color*/
+  float: left; /* position of hamburger menu to left*/
+  line-height: 70px; /* line height of hamburger menu */
+  font-size: 24px; /* hamburger menu font size */
+  cursor: pointer; /* cursor is pointer when on hamburger menu */
+  display: none; /* display to none */
+  z-index: 2; /* To be the top of the content of webpage */
+}
+
+/*Web Responsive Settings*/
+@media (max-width: 1023px) {
+  header {
+    padding: 0 30px; /* padding of header */
+  }
+
+  /*Logo after Web Responsive*/
+  header .logo {
+    margin-left: 6%; /* logo have a margin to the left of 6% */
+  }
+
+  /*Hamburger Menu after Web Responsive*/
+  .menu-toggle {
+    display: block; /* display to block */
+  }
+
+/*Hamburger Menu Style*/
+  header nav {
+    position: absolute;
+    width: 60%; /* nav background coverage*/
+    height: 900vh; /* height of background to 900vh */
+    background: rgba(0, 0, 0, 0.8); /*nav background color*/
+    top: 69.5px; /*position of nav background from top alignment*/
+    left: -100%; /* slider for hamburger menu*/
+    transition: 0.5s; /* transition of 0.5s */
+  }
+
+  header nav.active {
+    left: 0; /* position of class active to the left */
+  }
+
+  header nav ul {
+    display: block; /* display block */
+    text-align: center; /* align text to the center */
+  }
+
+  header nav ul li a {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2); /* border bottom to segment out each link */
+  }
+}

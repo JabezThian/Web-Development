@@ -1,0 +1,40 @@
+/* Home page Styling */
+.contentHome {
+  margin-top: 732px; /* spacing from the top for the content of Home webpage */
+}
+
+.grid {
+  display: grid; /* Display to grid*/
+  margin: 0 auto; /* Margin to 0 and auto when web responsive */
+  width: 80%; /* Width of grid to 80% */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Format of the grid template in columns*/
+  grid-gap: 5%; /* the gap inbetween the grids */
+}
+
+.item1, .item2, .item3 {
+  text-align: center; /* Making items to align center */
+  transition: 0.5s ease; /* transition of 0.5s when hovered*/
+  margin: 50px 0px 0px 0px; /* top spacing for the items to 50px away from each item*/
+  z-index: 0; /* weight of the grid is 0*/
+}
+
+.item1:hover, .item2:hover, .item3:hover {
+  opacity: 0.8; /* opacity for background color of hover */
+  background-color: gray; /* Hover color for grid */
+  cursor: pointer; /* changes the cursor when pointed at grid */
+  z-index: 0; /* weight of the grid is 0*/
+}
+
+.partner {
+  text-align: center; /* Making image of partner center */
+  margin-top: 20px; /* spacing from the top of the partner class*/
+}
+
+@media (max-width: 1023px) {
+  .partner {
+    margin-top: 200px; /* change of spacing from the top for the partner class */
+  }
+  .contentHome {
+    margin-top: 380px; /* spacing from the top for the content of Home webpage */
+  }
+}

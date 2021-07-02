@@ -1,0 +1,94 @@
+/* General Styling */
+body {
+  background-color: #f5f5dc; /*background */
+}
+
+.heading {
+  font-family: "Times New Roman", serif, sans-serif; /*font for class heading*/
+  text-align: center; /*alignment for class heading*/
+  text-transform: capitalize; /*text transform for class heading to capitalize */
+  letter-spacing: 5px; /*spacing inbetweeneach letter for class heading of 5px */
+  font-size: 32px; /* font size */
+}
+
+footer {
+  font-family: "Times New Roman", serif, sans-serif; /*font for class footer */
+  text-align: center; /*alignment for class footer */
+  letter-spacing: 3px; /*spacing inbetween each letter for class footer of 3px */
+}
+
+.divider {
+  height: 1px; /* height for class divider */
+  background: black; /* background color of class divider */
+}
+
+.divide {
+  width: 60%; /* width for class divide 60% */
+  color: black; /* text color is black for class divide */
+  background-color: black; /* background color is black for class divide */
+  margin: 0% 20% 0% 20%; /*alignment for class divide */
+}
+
+/* Media Styling */
+.media {
+  text-align: center; /*alignment for class media */
+  font-size: 30px; /* font size for class media */
+  letter-spacing: 20px; /*spacing inbetween each letter for class media of 20px */
+}
+
+.media a {
+  text-decoration: none; /* text decoration is none for class media link */
+  color: black; /* text color for class media link */
+  cursor: pointer; /* cursor changes to pointer for class media link */
+}
+
+.media a:hover{
+  color: rgba(212, 175,55, 1); /* text color for class media link when hover */
+}
+
+/*back to top button Styling*/
+#back {
+  display: none; /* display none */
+  position: fixed; /* fixed psoition */
+  bottom: 10px; /* Position of button from bottom */
+  right: 15px; /* Position of button from right */
+  z-index: 10;
+  font-size: 14px; /* font size of button */
+  border: none; /*no border */
+  outline: none; /* no outline */
+  background-color: rgba(255, 215, 0, 0.7); /* color of background*/
+  color: black; /* text color */
+  cursor: pointer; /* cursor pointer when mouse on button */
+  padding: 10px; /* padding of 10px */
+  border-radius: 8px; /* border radius of 8px for button*/
+  }
+
+#back:hover {
+  background-color: rgba(212, 175,55, 1); /* When hover, background color changes */
+  color: white; /* When hover, text color changes to white */
+  }
+
+/*Submit page Styling*/
+.submit {
+  text-align: center; /*alignment for class submit */
+}
+
+.home {
+  font-family: "Times New Roman", serif, sans-serif; /*font for class home */
+  color: black; /* text color for class home is black */
+  background-color: rgba(255, 215, 0, 1); /* background color for class home */
+  text-decoration: none; /* no text decoration */
+  padding: 10px; /* padding of 10px for class home */
+  border: 2px solid black ; /* border for class home is 2px solid, black */
+  border-radius: 10px; /* border-radius of 10px on home button */
+}
+
+.buttonhome {
+  text-align: center; /*alignment for class buttonhome */
+}
+
+.home:hover {
+  font-family: "Times New Roman", serif, sans-serif; /*font for class home hover */
+  background-color: rgba(212, 175,55, 1); /* background color for class home when hover */
+  color: white;
+}

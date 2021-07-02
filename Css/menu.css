@@ -1,0 +1,29 @@
+/*Menu page Styling*/
+.contentMenu {
+  margin-top: 530px; /* spacing from the top for content */
+}
+
+.menu_heading {
+  font-family: "Times New Roman", serif, sans-serif; /* fonts for the heading */
+  text-align: center; /* making the text center */
+  letter-spacing: 3px; /* spacing between letters of 3px*/
+}
+
+.menu {
+  font-family: "Times New Roman", serif, sans-serif; /* fonts for the menu */
+  text-align: center; /* making the text center */
+  letter-spacing: 1px; /* spacing between letters of 1px*/
+}
+
+.timing {
+  font-family: "Times New Roman", serif, sans-serif; /* fonts for the timing */
+  text-align: center; /* making the text center */
+  font-size: 16px; /* font size change to 16px */
+  font-style: italic;
+}
+
+@media (max-width: 1023px) {
+  .contentMenu {
+    margin-top: 280px; /* spacing from the top for content */
+  }
+}

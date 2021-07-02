@@ -1,0 +1,61 @@
+/*Contact page Styling*/
+.contentcontact {
+  margin-top: 80px; /* spacing from the top for content */
+}
+
+.address {
+    font-family: "Times New Roman", serif, sans-serif; /* font for class address*/
+    text-align: center; /* text alignment to center */
+    font-size: 1.1em; /* font sizing for class address */
+}
+
+.address a {
+  font-family: "Times New Roman", serif, sans-serif; /* font for class address link*/
+  letter-spacing: 1px; /* spacing inbetween each letter of 1px */
+  font-size: 1.1em; /* font sizing for class address link */
+  color: black; /* text color of address link to black */
+  text-decoration: none; /* text underline to none */
+}
+
+.address a:hover {
+  font-family: "Times New Roman", serif, sans-serif; /* font for class address link when hover */
+  color: rgba(212, 175, 55, 1); /* text color of address link when hover is rgba(212, 175, 55, 1)*/
+  text-decoration: underline; /* text to underline when hover over address link */
+}
+
+.contact {
+  font-family: "Times New Roman", serif, sans-serif; /* font for class contact */
+  text-align: center; /* text alignment to center */
+  letter-spacing: 5px; /* spacing inbetween each letter of 5px */
+}
+
+.booking {
+  font-family: "Times New Roman", serif, sans-serif; /* font for class booking */
+  color: black; /* text color of booking to black */
+  background-color: rgba(255, 215, 0, 1); /* background color for booking to rgba(255, 215, 0, 1)*/
+  text-decoration: none; /* text decoration for booking to none */
+  padding: 10px; /* padding for booking of 10px for all sides */
+  border: 2px solid black ; /* border of 2px, solid black line in class booking */
+  border-radius: 10px; /* border-radius for button of 10px */
+}
+
+.buttonbooking {
+  text-align: center; /* "button" alignment to center */
+}
+
+.booking:hover{
+  font-family: "Times New Roman", serif, sans-serif; /* font for class booking when hover */
+  background-color: rgba(212, 175, 55, 1); /* background color for class booking when hover becomes rgba(212, 175, 55, 1) */
+  color: white; /* text color of booking when hover link to white */
+}
+
+.map {
+  text-align: center; /* map alignment to center */
+}
+
+@media (max-width: 1023px) {
+ .contactmap {
+   width: 100%; /* width for map to 100% */
+   height: 100%; /* height for the map to 100% */
+ }
+}
