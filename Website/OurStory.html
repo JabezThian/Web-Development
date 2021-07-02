@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>The Golden Cafe - Our Story</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href ="../Gallery/Mlogo.png" type="image/x-icon">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../Css/navigation.css">
+    <link rel="stylesheet" href="../Css/style.css">
+    <link rel="stylesheet" href="../Css/story.css">
+    <link rel="stylesheet" href="../Css/slideshow.css">
+  </head>
+  <body>
+
+    <!--Start of Navigation Bar-->
+    <div class="sticky">
+      <header>
+        <div class="logo">
+          <a href="GoldenCafe.html"><img src="../Gallery/logoT2b.png" alt="The Golden Cafe"></a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="GoldenCafe.html">Home</a></li>
+            <li><a href="Menu.html">Menu</a></li>
+            <li><a href="OurStory.html" class="active">Our Story</a></li>
+            <li><a href="contact.html">Location & Time</a></li>
+            <li><a href="JoinUs.html">Join Us</a></li>
+          </ul>
+        </nav>
+        <div class="menu-toggle">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+      </header>
+    </div>
+    <!--End of Navigation Bar-->
+
+    <!--Start of image-->
+    <div class="container">
+      <img src="../Gallery/story.jpg" alt="Image Unavailable" class="storyimg">
+    </div>
+    <!--End of image-->
+
+    <!--Start of Content-->
+    <div class="contentStory">
+      <h2 class="heading">Our Story</h2>
+      <div class="story">
+        <p>At Golden Café, our aim is to match the breath-taking view with quintessential progressive delights, where texture, purity of flavour and quality of ingredients are paramount. Our professional service team and chefs deliver an exceptional dining experience through their knowledge and genuine hospitality that has made Golden Café one of the best fine dining cafés in Singapore. </p>
+        <p>Golden Café was established in 2002, started by John Smith Williams and James Gorden, both of them are best friends and have two different dreams which could only be made possible if they work together. They both treasured their frienship and worked towards their dream to open a cafe, and that was how The Golden Cafe was established. James Gorden is the MasterChef in 2000 as part of, the café utilises cutting edge nutrition research, ancient wisdom, culinary skills, and international food and nutrition experts to bring you truly healthy and inspiring fare.</p>
+      </div>
+      <br>
+      <h2 class="heading">Honorary Star Award</h2>
+      <div class="story">
+        <p>The Honorary Star Award looks at the quality of the product; mastery of the cooking technique; balance of flavor; personality of the chef as expressed on the plate; and consistency.</p>
+        <p>Today, The Golden Cafe have a status of 3 Honorary Star. Back in 2005, The Golden Cafe was the first Cafe in Singapore to earn it's first Honorary Star. Subsequently in 2010, The Golden Cafe earned our second Honorary Star. And just last year (2019) The Golden Cafe managed to earn it's third Honorary Star!</p>
+      </div>
+      <br>
+      <div class="grid2">
+        <div class="product1">
+          <img src="../Gallery/founder.jpg" alt="Image Unavailable" style="width:70%; height:100%;">
+        </div>
+        <div class="product2">
+          <h2>Founder of Golden Cafe</h2>
+          <span class="position">John Smith Williams</span>
+          <p>I am John Smith Williams from the United States of America. I was born with the ambition to open my very own Cafe. I studied about business in Singapore when I was 17 years old and fell in love with Singapore. I was fortunate to have a best friend (James Gorden) in Singapore who was pursing his dream to be a chef. That was when I decided to open a Cafe in Singapore with him.</p>
+        </div>
+        <div class="product3">
+          <img src="../Gallery/heaadchef.jpg" alt="Image Unavailable" style="width:70%; height:100%;">
+        </div>
+        <div class="product4">
+          <h2>Head Chef of Golden Cafe</h2>
+          <span class="position">James Gorden</span>
+          <p>I am James Gorden from Singapore. When I was as little as 6 years old, I would always help my mother in the kitchen to preapre meals for the family. I've always have the passion and love cooking since then. I grew up having the dream to become the best chef and also being able be a head chef in a kitchen. I was fortunate enough to find John and hear his dream of opening up a cafe in Singapore. That was the moment we both decided to work together to open up this cafe.</p>
+        </div>
+      </div>
+    <!--End of Content-->
+
+    <!--Start of media of Webpage-->
+    <br>
+    <div class="media">
+      <span style="font-size: 20px; letter-spacing: 0">Follow us @</span>
+      <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+      <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+    </div>
+    <!--End of media of Webpage-->
+
+    <!--Start of Footer-->
+      <hr class="divider">
+      <footer>Copyright © 2020 · The Golden Cafe · All rights reserved</footer>
+      <br>
+    </div>
+    <!--End of Footer-->
+
+    <!--Start of Back to top button-->
+    <button onclick="topFunction()" id="back" title="Go back up">Back to top</button>
+    <!--End of Back to top button-->
+
+    <!--Script for Navigation Bar-->
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav');
+        menuToggle.addEventListener('click', () => {
+            if (nav.className != 'active') {nav.className = 'active';}
+            else {nav.className = '';}
+        });
+    </script>
+
+    <!--Script for Back to top button-->
+    <script>
+      //Get the button
+      var mybutton = document.getElementById("back");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+          mybutton.style.display = "block";
+        }
+        else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+
+  </body>
+</html>
